@@ -1,0 +1,427 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --header-bg-color: #f56262;
+    --main-bg-color: #eb4f4e;
+    --merit-text-color: #d94948;
+    --merit-bg-color: #232324;
+    --team-bg-color: #6cc372;
+    --team-text-color: #61af66;
+    --portfolio-bg-color: #f0f0f0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: var(--header-bg-color);
+    box-shadow: 0 0px 4px rgb(0, 0, 0, 0.2);
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 110px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    padding: 0 0 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+nav ul .active {
+    background-color: #000;
+}
+
+.banner {
+    background-color: var(--main-bg-color);
+}
+
+.main-content h1 {
+    text-align: center;
+    font-size: 60px;
+    margin: 0;
+    padding: 20px 0 0 0;
+    color: #fff;
+}
+
+.main-content p {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+.main-content .img-container img {
+    width: 100%;
+}
+
+/* Merit */
+.merit {
+    background-color: var(--merit-bg-color);
+    text-align: center;
+    color: #fff;
+    padding: 44px 0 24px;
+}
+
+.merit .title h1 {
+    font-size: 40px;
+}
+
+.merit .title p {
+    font-size: 20pt;
+    margin: 0;
+    color: var(--merit-text-color);
+    padding: 20px;
+}
+
+/* Meri sections */
+.merit-sections {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.merit-sections h2 {
+    margin: 0;
+    padding: 10px 0 0 0;
+}
+
+.merit-sections p {
+    margin: 0;
+    padding: 10px 0;
+    color: var(--merit-text-color);
+}
+
+.merit-section {
+    margin: 0 30px;
+    width: 220px;
+}
+
+/* Our team */
+.our-team {
+    background-color: var(--team-bg-color);
+    text-align: center;
+    color: #fff;
+    padding: 44px 0 24px;
+}
+
+.our-team .title h1 {
+    font-size: 40px;
+}
+
+.our-team .title p {
+    font-size: 20pt;
+    margin: 0;
+    padding: 20px;
+}
+
+.our-team-sections {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.our-team-section p:first-of-type {
+    color: var(--team-text-color);
+    font-size: 20px;
+}
+
+.our-team-section p {
+    color: var(--merit-text-color);
+    font-size: 16px;
+}
+
+.our-team-section {
+    background-color: #fff;
+    margin: 10px 5px 0;
+    width: 230px;
+    padding: 20px 14px 7px;
+    border-radius: 4px;
+}
+
+.our-team-section img {
+    width: 147px;
+    border: 9px solid var(--team-text-color);
+    border-radius: 50%;
+}
+
+.our-team-section a {
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    background-color: var(--team-bg-color);
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.our-team-section i {
+    font-size: 24px;
+    padding: 0 10px 0 0;
+}
+
+/* Porfolio */
+.portfolio {
+    background-color: var(--portfolio-bg-color);
+    text-align: center;
+    padding: 30px 0 220px;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.portfolio .title h1 {
+    font-size: 40px;
+}
+
+.portfolio .title p {
+    font-size: 20px;
+    margin: 0;
+    padding: 20px;
+    color: var(--team-bg-color);
+}
+
+.portfolio-sections {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    margin: 0 20px;
+}
+
+/* Pricing */
+.pricing-sections {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pricing-section {
+    width: 300px;
+    text-align: center;
+    border: 1px solid #f5f5f5;
+    border-radius: 4px;
+    background-color: #fff;
+    margin: -127px 10px 0;
+}
+
+.pricing-section-2 {
+    margin: -150px 0 0 0;
+}
+
+.pricing-section .header-content h1 {
+    font-size: 40px;
+    padding: 16px 0 0 0;
+}
+
+.pricing-section .header-content p {
+    font-size: 20px;
+}
+
+.pricing-section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-section ul li {
+    padding: 16px;
+    background-color: var(--portfolio-bg-color);
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.price-container {
+    background-color: #616161;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 15px 7px;
+}
+
+.price-container .price-of-product {
+    color: #fff;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.price-of-product div:nth-child(1) {
+    font-size: 20px;
+}
+
+.price-of-product div:nth-child(2) {
+    font-size: 40px;
+}
+
+.price-of-product div:nth-child(3) {
+    font-size: 20px;
+    padding: 0 0 0 3px;
+}
+
+.pricing-section-2 .price-container a {
+    color: var(--main-bg-color);
+}
+
+.price-container a {
+    text-decoration: none;
+    background-color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 4px;
+    color: #616161;
+}
+
+.text-color {
+    color: var(--main-bg-color);
+}
+
+.bg-color {
+    background-color: var(--main-bg-color);
+}
+
+.pricing-bottom-text {
+    text-align: center;
+    padding: 32px 0;
+    font-size: 20px;
+    color: var(--main-bg-color);
+}
+
+.pricing-bottom-text p {
+    margin: 0;
+    padding: 0 10px;
+}
+
+.pricing-bottom-text a {
+    text-decoration: none;
+    color: var(--main-bg-color);
+}
+
+/* Tweets */
+.tweets {
+    padding: 44px 0 28px;
+    background-color: var(--main-bg-color);
+}
+
+.tweets h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+}
+
+.tweets p {
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+}
+
+.tweet .media-icon a {
+    text-align: center;
+    display: block;
+    padding: 25px 0;
+}
+
+.tweet .media-icon i {
+    font-size: 32px;
+    color: #fff;
+}
+
+.tweet .tweet-detail {
+    color: #fff;
+    font-size: 21px;
+    padding: 0 10px;
+}
+
+.tweet .tweet-detail strong {
+    color: #000;
+}
+
+/* footer */
+.footer {
+    background-color: var(--merit-bg-color);
+    padding: 16px 0;
+}
+
+.footer-content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.footer-content-container .footer-description {
+    color: #fff;
+    font-size: 18px;
+}
+
+.footer-content-container .footer-description span {
+    color: var(--main-bg-color);
+}
+
+.footer-content-container .footer-social-icon i {
+    color: #fff;
+    padding: 7px 5px;
+    background-color: var(--main-bg-color);
+}
+
+/* Google Map */
+.map .google-map {
+    position: relative;
+    text-align: center;
+}
+
+.google-map .map-description {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 616px;
+    height: 140px;
+    border-radius: 4px;
+}
+
+.google-map .map-description h1 {
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0 0 0;
+}
+
+.google-map .map-description p {
+    color: var(--main-bg-color);
+    font-size: 20px;
+}
